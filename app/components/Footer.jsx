@@ -12,7 +12,7 @@ const Footer = () => {
           href="#top"
           className={`text-rose-50 hover:underline underline underline-offset-3 ${ovo.className}`}
         >
-          ME
+          mre
         </a>
       </footer>
     </div>

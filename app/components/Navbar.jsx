@@ -35,15 +35,15 @@ const Navbar = () => {
         <Image src={assets.header_bg_color} alt="" className="w-full" />
       </div>
       <nav
-        className={`w-full fixed px-6 lg:px-10 xl:px-[10%] py-4 flex items-center justify-between z-50 ${
-          isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : ''
+        className={`w-full fixed px-6 lg:px-10 xl:px-[10%] py-1 flex items-center justify-between z-50 ${
+          isScrolled ? 'bg-rose-50/90 backdrop-blur-md shadow-sm' : ''
         }`}
       >
         <a href="#top">
           <Image
             src={assets.logo}
             alt="site logo"
-            className="w-28 cursor-pointer mr-14"
+            className="w-20 cursor-pointer mr-6"
           />
         </a>
 

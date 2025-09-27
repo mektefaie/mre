@@ -52,7 +52,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full px-[12%] py-10 scroll-mt-6 md:scroll-mt-9 bg-rose-50"
+      className="w-full px-[12%] py-3 sm:py-18 scroll-mt-6 md:scroll-mt-9 bg-rose-50"
     >
       <h4 className={`text-center mb-2 text-lg ${ovo.className}`}>
         Connect with <b className={`${ovo.className}`}>ME</b>
