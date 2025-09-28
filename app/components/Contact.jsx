@@ -1,9 +1,8 @@
 'use client';
 
 import { ovo } from '@/app/fonts';
-import { assets } from '@/assets/assets';
-import Image from 'next/image';
 import { useState } from 'react';
+import { FaRegPaperPlane } from 'react-icons/fa6';
 
 const Contact = () => {
   // using Web3Forms
@@ -92,12 +91,7 @@ const Contact = () => {
           type="submit"
           className={`py-2 px-8 w-max flex items-center justify-between gap-3 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 ${ovo.className}`}
         >
-          Send Message{' '}
-          <Image
-            src={assets.right_arrow_white}
-            alt="send icon"
-            className="w-4"
-          />
+          Send Message <FaRegPaperPlane />
         </button>
 
         {/* ✅ Updated to use state safely */}

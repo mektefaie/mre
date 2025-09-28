@@ -2,7 +2,7 @@ import { ovo } from '@/app/fonts';
 import { assets } from '@/assets/assets';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaLinkedin, FaRegMoon } from 'react-icons/fa';
 import SocialIcon from './SocialIcon';
 
 const Navbar = () => {
@@ -43,20 +43,15 @@ const Navbar = () => {
           <Image
             src={assets.logo}
             alt="site logo"
-            className="w-20 cursor-pointer mr-6"
+            className="w-20 cursor-pointer md:mr-12 lg:mr-16"
           />
         </a>
 
         <ul
-          className={`hidden md:flex items-center gap-5 lg:gap-8 rounded-full px-8 lg:px-12 py-1.5 transition-all duration-300 ease-in-out ${
+          className={`hidden md:flex items-center gap-5 lg:gap-8 rounded-full px-8 md:px-10 lg:px-16 xl:px-22 py-1.5 transition-all duration-300 ease-in-out ${
             isScrolled ? '' : 'bg-white shadow-sm'
           } `}
         >
-          <li>
-            <a href="#top" className={ovo.className}>
-              ME
-            </a>
-          </li>
           <li>
             <a href="#endodontist" className={ovo.className}>
               Endodontist
@@ -83,13 +78,9 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 ml-2">
           <button>
-            <Image
-              src={assets.moon_icon}
-              alt="dark mode icon"
-              className="w-5"
-            />
+            <FaRegMoon className="w-5 h-5" />
           </button>
           {/* <a
             href="#contact"
@@ -99,7 +90,7 @@ const Navbar = () => {
             <Image src={assets.arrow_icon} alt="contact icon" className="w-3" />
           </a> */}
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <SocialIcon
               href="https://www.linkedin.com/in/ektefaie/"
               Icon={FaLinkedin}
@@ -135,7 +126,7 @@ const Navbar = () => {
             <Image
               src={assets.close_black}
               alt="mobile menu icon"
-              className="w-5 cursor-pointer"
+              className="w-4 pt-3 cursor-pointer"
             />
           </div>
           <li>

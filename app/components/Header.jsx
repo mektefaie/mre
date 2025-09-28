@@ -1,6 +1,8 @@
 import { outfit, ovo } from '@/app/fonts';
 import { assets } from '@/assets/assets';
 import Image from 'next/image';
+import { FaFileDownload } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa6';
 
 const Header = () => {
   return (
@@ -48,16 +50,14 @@ const Header = () => {
           href="#contact"
           className="px-8 py-2 border border-black rounded-full bg-black text-white flex items-center gap-2"
         >
-          Contact Me{' '}
-          <Image src={assets.right_arrow_white} alt="" className="w-4" />
+          Contact Me <FaEnvelope className=" w-4 h-4" />
         </a>
         <a
           href="/sample-resume.pdf"
           download
           className="px-8 py-2 border rounded-full border-gray-500 flex items-center gap-2"
         >
-          My Res&uuml;m&eacute;{' '}
-          <Image src={assets.download_icon} alt="" className="w-4" />
+          My Res&uuml;m&eacute; <FaFileDownload className=" w-4 h-4" />
         </a>
       </div>
     </div>
