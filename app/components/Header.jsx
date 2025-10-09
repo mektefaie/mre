@@ -39,9 +39,10 @@ const Header = () => {
         endodontist, soccer referee, web developer & aspiring illustrator.
       </h1>
       <p className={`max-w-2xl mx-auto ${ovo.className}`}>
-        I wear many hats—fixing teeth, teaching students, reffing soccer games,
-        and coding websites on the side. I also dabble in illustration when
-        inspiration hits. Life's more fun when you don't fit in just one box.
+        I wear many hats—fixing teeth, teaching dental students, reffing soccer
+        games, and coding websites on the side. I also dabble in illustration
+        when inspiration hits. Life's more fun when you don't fit in just one
+        box.
       </p>
       <div
         className={`flex flex-col sm:flex-row items-center gap-4 mt-4 ${outfit.className}`}
@@ -50,14 +51,14 @@ const Header = () => {
           href="#contact"
           className="px-8 py-2 border border-black rounded-full bg-black text-white flex items-center gap-2"
         >
-          Contact Me <FaEnvelope className=" w-4 h-4" />
+          Let's Connect <FaEnvelope className=" w-4 h-4" />
         </a>
         <a
           href="/sample-resume.pdf"
           download
           className="px-8 py-2 border rounded-full border-gray-500 flex items-center gap-2"
         >
-          My Res&uuml;m&eacute; <FaFileDownload className=" w-4 h-4" />
+          Download CV <FaFileDownload className=" w-4 h-4" />
         </a>
       </div>
     </div>

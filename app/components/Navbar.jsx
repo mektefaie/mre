@@ -2,7 +2,13 @@ import { ovo } from '@/app/fonts';
 import { assets } from '@/assets/assets';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { FaFacebook, FaGithub, FaLinkedin, FaRegMoon } from 'react-icons/fa';
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaMoon,
+} from 'react-icons/fa';
 import SocialIcon from './SocialIcon';
 
 const Navbar = () => {
@@ -43,7 +49,7 @@ const Navbar = () => {
           <Image
             src={assets.logo}
             alt="site logo"
-            className="w-20 cursor-pointer md:mr-12 lg:mr-16"
+            className="w-22 md:w-24 lg:w-28 cursor-pointer md:mr-12 lg:mr-16"
           />
         </a>
 
@@ -80,7 +86,7 @@ const Navbar = () => {
         </ul>
         <div className="flex items-center gap-4 ml-2">
           <button>
-            <FaRegMoon className="w-5 h-5" />
+            <FaMoon className="w-5 h-5 text-[#8b0835]" />
           </button>
           {/* <a
             href="#contact"
@@ -91,6 +97,12 @@ const Navbar = () => {
           </a> */}
 
           <div className="flex items-center gap-3">
+            <SocialIcon
+              href="https://www.linkedin.com/in/ektefaie/"
+              Icon={FaInstagramSquare}
+              label="Instagram"
+              className="text-gray-800 hover:text-rose-600 "
+            />
             <SocialIcon
               href="https://www.linkedin.com/in/ektefaie/"
               Icon={FaLinkedin}
@@ -169,6 +181,11 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Illustrator
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className={ovo.className} onClick={toggleMenu}>
+              Contact Me
             </a>
           </li>
         </ul>

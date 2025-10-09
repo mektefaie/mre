@@ -51,7 +51,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full px-[12%] py-3 sm:py-18 scroll-mt-6 md:scroll-mt-9 bg-rose-50"
+      className="w-full px-[12%] pt-4 pb-6 sm:py-18 md:scroll-mt-9 bg-rose-50"
     >
       <h4 className={`text-center mb-2 text-lg ${ovo.className}`}>
         Connect with <b className={`${ovo.className}`}>ME</b>
@@ -89,7 +89,7 @@ const Contact = () => {
         ></textarea>
         <button
           type="submit"
-          className={`py-2 px-8 w-max flex items-center justify-between gap-3 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 ${ovo.className}`}
+          className={`py-2 px-8 w-max flex items-center justify-between gap-3 bg-black/80 text-white rounded-full mx-auto cursor-pointer hover:bg-black duration-500 ${ovo.className}`}
         >
           Send Message <FaRegPaperPlane />
         </button>

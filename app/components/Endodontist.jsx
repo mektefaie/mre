@@ -14,6 +14,13 @@ const Endodontist = () => {
         VanEndo, <YearsSince startYear={2009} />
       </h4>
       <h2 className={`text-center text-5xl ${ovo.className}`}>Endodontist</h2>
+      <p
+        className={`text-center max-w-3xl mx-auto mt-5 mb-12 ${ovo.className}`}
+      >
+        I am a Clinical Associate Professor at the University of British
+        Columbia, Canada, where I teach both undergraduate and graduate-level
+        courses and provide clinical supervision during patient care.
+      </p>
 
       <div className="flex w-full flex-col lg:flex-row  items-center justify-center gap-20 my-20">
         <div className="w-64 sm:w-80 rounded-3xl max-w-none">
@@ -24,18 +31,16 @@ const Endodontist = () => {
           />
         </div>
         <div className="">
-          <p className={`mb-10 max-w-2xl ${ovo.className}`}>
-            I am an experienced Frontend Developer with over 4 years of
-            professional expertise in the field.
-          </p>
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <li
                 key={index}
                 className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover-light hover:transition-colors"
               >
-                <Image src={icon} alt={title} className="w-7 mt-3" />
-                <h3 className="my-4 font-semibold test-gray-700">{title}</h3>
+                <Image src={icon} alt={title} className="w-9 mt-2" />
+                <h3 className="my-4 font-semibold tracking-wider test-gray-600">
+                  {title}
+                </h3>
                 <p className="text-gray-600 text-sm">{description}</p>
               </li>
             ))}

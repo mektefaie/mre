@@ -11,7 +11,7 @@ const Educator = () => {
     >
       <div className="w-[70%] border-t border-gray-300 mx-auto"></div>
       <h4 className={`text-center mt-10 mb-2 text-lg ${ovo.className}`}>
-        UBC, <YearsSince startYear={2009} />
+        UBC Dentistry, <YearsSince startYear={2009} />
       </h4>
       <h2 className={`text-center text-5xl ${ovo.className}`}>
         Clinical Associate Professor
@@ -29,10 +29,15 @@ const Educator = () => {
             key={index}
             className="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover-light hover:transition-colors"
           >
-            <Image src={icon} alt="" className="w-10" />
-            <h3 className="text-lg my-4 text-gray-700">{title}</h3>
+            <Image src={icon} alt="" className="w-12" />
+            <h3 className="text-lg font-medium tracking-wider my-4 text-gray-700">
+              {title}
+            </h3>
             <p className="text-sm text-gray-600 leading-5">{description}</p>
-            <a href="{link}" className="flex items-center gap-2 text-sm mt-5">
+            <a
+              href="{link}"
+              className="flex items-center gap-2 text-sm text-rose-800 mt-5"
+            >
               Read more{' '}
               <Image src={assets.right_arrow} className="w-4" alt="" />{' '}
             </a>

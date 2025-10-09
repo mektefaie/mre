@@ -32,9 +32,9 @@ const Frontender = () => {
             <div className="bg-rose-100 w-10/12 rounded-md border border-gray-400 absolute bottom-5 left-1/2 -translate-x-1/2 pt-1 pb-2 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <h2 className="font-semibold">{project.title}</h2>
-                <p className="text-sm text-gray-700">{project.description}</p>
+                {/* <p className="text-sm text-gray-700">{project.description}</p> */}
               </div>
-              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-amber-300 transition">
                 <Image src={assets.send_icon} alt="send icon" className="w-5" />
               </div>
             </div>
