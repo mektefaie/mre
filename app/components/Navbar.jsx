@@ -2,14 +2,8 @@ import { ovo } from '@/app/fonts';
 import { assets } from '@/assets/assets';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import {
-  FaFacebook,
-  FaGithub,
-  FaInstagramSquare,
-  FaLinkedin,
-  FaMoon,
-} from 'react-icons/fa';
-import SocialIcon from './SocialIcon';
+import { FaMoon } from 'react-icons/fa';
+import SocialIcons from './sub/SocialIcons';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -84,44 +78,11 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div className="flex items-center gap-4 ml-2">
+        <div className="flex items-center justify-center gap-4 ml-2">
           <button>
             <FaMoon className="w-5 h-5 text-[#8b0835]" />
           </button>
-          {/* <a
-            href="#contact"
-            className={`hidden lg:flex items-center gap-3 px-6 py-1 border border-grey-500 rounded-full ml-4 ${ovo.className}`}
-          >
-            Contact{' '}
-            <Image src={assets.arrow_icon} alt="contact icon" className="w-3" />
-          </a> */}
-
-          <div className="flex items-center gap-3">
-            <SocialIcon
-              href="https://www.linkedin.com/in/ektefaie/"
-              Icon={FaInstagramSquare}
-              label="Instagram"
-              className="text-gray-800 hover:text-rose-600 "
-            />
-            <SocialIcon
-              href="https://www.linkedin.com/in/ektefaie/"
-              Icon={FaLinkedin}
-              label="LinkedIn"
-              className="text-gray-800 hover:text-sky-700 "
-            />
-            <SocialIcon
-              href="https://www.facebook.com/ektefaie"
-              Icon={FaFacebook}
-              label="Facebook"
-              className="text-gray-800 hover:text-blue-600"
-            />
-            <SocialIcon
-              href="https://github.com/mektefaie"
-              Icon={FaGithub}
-              label="GitHub"
-              className="text-gray-800 hover:text-slate-600"
-            />
-          </div>
+          <SocialIcons />
           <button className="block md:hidden ml-3" onClick={toggleMenu}>
             <Image src={assets.menu_black} alt="menu icon" className="w-5" />
           </button>

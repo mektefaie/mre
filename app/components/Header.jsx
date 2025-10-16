@@ -26,11 +26,6 @@ const Header = () => {
         <span
           className={`first-letter:text-2xl first-letter:font-semibold first-letter:text-gray-800 ${ovo.className}`}
         >
-          R.
-        </span>
-        <span
-          className={`first-letter:text-2xl first-letter:font-semibold first-letter:text-gray-800 ${ovo.className}`}
-        >
           Ektefaie
         </span>
         <Image src={assets.hand_icon} alt="" className="w-6" />
