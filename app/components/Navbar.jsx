@@ -1,9 +1,8 @@
 import { ovo } from '@/app/fonts';
 import { assets } from '@/assets/assets';
+import { RiMoonLine } from '@remixicon/react';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { FaMoon } from 'react-icons/fa';
-import SocialIcons from './sub/SocialIcons';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,12 +42,12 @@ const Navbar = () => {
           <Image
             src={assets.logo}
             alt="site logo"
-            className="w-22 md:w-24 lg:w-28 cursor-pointer md:mr-12 lg:mr-16"
+            className="w-22 md:w-24 lg:w-28 cursor-pointer"
           />
         </a>
 
         <ul
-          className={`hidden md:flex items-center gap-5 lg:gap-8 rounded-full px-8 md:px-10 lg:px-16 xl:px-22 py-1.5 transition-all duration-300 ease-in-out ${
+          className={`hidden md:flex items-center gap-5 lg:gap-8 rounded-full px-8 md:px-10 lg:px-14 xl:px-22 py-1.5 md:mr-12 lg:mr-16 transition-all duration-300 ease-in-out ${
             isScrolled ? '' : 'bg-white shadow-sm'
           } `}
         >
@@ -80,9 +79,8 @@ const Navbar = () => {
         </ul>
         <div className="flex items-center justify-center gap-4 ml-2">
           <button>
-            <FaMoon className="w-5 h-5 text-[#8b0835]" />
+            <RiMoonLine className="w-5 h-5 text-zinc-900" />
           </button>
-          <SocialIcons />
           <button className="block md:hidden ml-3" onClick={toggleMenu}>
             <Image src={assets.menu_black} alt="menu icon" className="w-5" />
           </button>

@@ -54,9 +54,9 @@ const Contact = () => {
       className="w-full px-[12%] pt-4 pb-6 sm:py-18 md:scroll-mt-9 bg-rose-50"
     >
       <h4 className={`text-center mb-2 text-lg ${ovo.className}`}>
-        Connect with <b className={`${ovo.className}`}>ME</b>
+        Connect With Me
       </h4>
-      <h2 className={`text-center text-5xl ${ovo.className}`}>Get in touch</h2>
+      <h2 className={`text-center text-5xl ${ovo.className}`}>Get In Touch</h2>
       <p
         className={`text-center max-w-2xl mx-auto mt-5 mb-12 ${ovo.className}`}
       >

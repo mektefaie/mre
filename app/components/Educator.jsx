@@ -1,7 +1,7 @@
 import { ovo } from '@/app/fonts';
 import { assets, serviceData } from '@/assets/assets';
 import Image from 'next/image';
-import YearsSince from './YearsSince';
+import Heading from './sub/Heading';
 
 const Educator = () => {
   return (
@@ -9,13 +9,11 @@ const Educator = () => {
       id="educator"
       className="relative w-full px-[12%] pt-10 scroll-mt-6 md:scroll-mt-9 bg-rose-0"
     >
-      <div className="w-[70%] border-t border-gray-300 mx-auto"></div>
-      <h4 className={`text-center mt-10 mb-2 text-lg ${ovo.className}`}>
-        UBC Dentistry, <YearsSince startYear={2009} />
-      </h4>
-      <h2 className={`text-center text-5xl ${ovo.className}`}>
-        Clinical Associate Professor
-      </h2>
+      <Heading
+        location={'UBC Dentistry'}
+        title={'Clinical Associate Professor'}
+        startYear={2009}
+      />
       <p
         className={`text-center max-w-3xl mx-auto mt-5 mb-12 ${ovo.className}`}
       >

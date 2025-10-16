@@ -1,7 +1,7 @@
 import { ovo } from '@/app/fonts';
 import { soccerList } from '@/assets/assets';
 import Image from 'next/image';
-import YearsSince from './YearsSince';
+import Heading from './sub/Heading';
 
 const Referee = () => {
   return (
@@ -9,13 +9,11 @@ const Referee = () => {
       id="referee"
       className="w-full relative px-[12%] py-10 scroll-mt-6 md:scroll-mt-9"
     >
-      <div className="w-[70%] border-t border-gray-300 mx-auto"></div>
-      <h4 className={`text-center mt-10 mb-2 text-lg ${ovo.className}`}>
-        B.C. Soccer, <YearsSince startYear={2013} />
-      </h4>
-      <h2 className={`text-center text-5xl ${ovo.className}`}>
-        Soccer Referee
-      </h2>
+      <Heading
+        location={'BC Soccer'}
+        title={'Soccer Referee'}
+        startYear={2013}
+      />
 
       <p
         className={`text-center max-w-3xl mx-auto mt-5 mb-12 ${ovo.className}`}

@@ -17,10 +17,10 @@ const Header = () => {
         <Image
           src={assets.profile_img}
           alt="Mahmoud Ektefaie"
-          className="rounded-full w-48 shadow-lg"
+          className="rounded-full w-54 shadow-lg"
         />
       </motion.div>
-      <motion.h2
+      <motion.h3
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{
@@ -29,11 +29,11 @@ const Header = () => {
           stiffness: 100,
         }}
         viewport={{ once: true }}
-        className={`flex items-center gap-2 text-xl md:text-2xl my-6 ${ovo.className}`}
+        className={`flex items-center gap-2 text-xl md:text-2xl mt-2 mb- ${ovo.className}`}
       >
         Hi! I'm Mahmoud Ektefaie
         <Image src={assets.hand_icon} alt="" className="w-6" />
-      </motion.h2>
+      </motion.h3>
       <motion.h1
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -43,7 +43,7 @@ const Header = () => {
           stiffness: 100,
         }}
         viewport={{ once: true }}
-        className={`text-3xl sm:text-4xl lg:text-6xl ${ovo.className}`}
+        className={`text-4xl md:text-5xl lg:text-6xl ${ovo.className}`}
       >
         endodontist, soccer referee, web developer & aspiring illustrator.
       </motion.h1>
