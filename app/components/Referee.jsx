@@ -1,13 +1,18 @@
 import { ovo } from '@/app/fonts';
 import { soccerList } from '@/assets/assets';
+import { motion } from 'motion/react';
 import Image from 'next/image';
 import Heading from './sub/Heading';
 
 const Referee = () => {
   return (
-    <div
+    <motion.div
       id="referee"
-      className="w-full relative px-[12%] py-10 scroll-mt-6 md:scroll-mt-9"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ delay: 0.2, duration: 1 }}
+      className="relative w-full min-h-screen px-[12%] pt-10 scroll-mt-6 md:scroll-mt-9 "
     >
       <Heading
         location={'BC Soccer'}
@@ -46,7 +51,7 @@ const Referee = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Referee;

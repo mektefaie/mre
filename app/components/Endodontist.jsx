@@ -7,7 +7,7 @@ const Endodontist = () => {
   return (
     <div
       id="endodontist"
-      className="relative w-full px-[12%] pt-10 scroll-mt-6 md:scroll-mt-9"
+      className="relative w-full min-h-screen px-[12%] pt-10 scroll-mt-6 md:scroll-mt-9 "
     >
       <Heading location={'VanEndo'} title={'Endodontist'} startYear={2009} />
       <p
@@ -26,15 +26,16 @@ const Endodontist = () => {
             className="w-full rounded-3xl"
           />
         </div>
-        <div className="">
+        <div>
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-            {infoList.map(({ icon, iconDark, title, description }, index) => (
+            {infoList.map(({ icon, title, description }, index) => (
               <li
                 key={index}
+                role="button"
                 className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover-light hover:transition-colors"
               >
                 <Image src={icon} alt={title} className="w-9 mt-2" />
-                <h3 className="my-4 font-semibold tracking-wider test-gray-600">
+                <h3 className="my-4 font-semibold tracking-wider text-gray-600">
                   {title}
                 </h3>
                 <p className="text-gray-600 text-sm">{description}</p>

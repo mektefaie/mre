@@ -43,7 +43,7 @@ const SocialIcons = ({ size = 22, gap = 10, className = '' }) => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={href.split('//')[1].split('.')[0]} // e.g. "instagram"
-            className={`text-gray-600 dark:text-gray-300 transition ${hoverColor}`}
+            className={`text-rose-50 dark:text-gray-300 transition ${hoverColor}`}
           >
             <Icon size={size} />
           </a>

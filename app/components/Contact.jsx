@@ -51,12 +51,15 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full px-[12%] pt-4 pb-6 sm:py-18 md:scroll-mt-9 bg-rose-50"
+      className="w-full min-h-screen px-[12%] pt-28  bg-rose-50 "
+      // className="w-full px-[12%] pt-4 pb-10 sm:py-18 md:scroll-pt-9 bg-rose-50 "
     >
       <h4 className={`text-center mb-2 text-lg ${ovo.className}`}>
         Connect With Me
       </h4>
-      <h2 className={`text-center text-5xl ${ovo.className}`}>Get In Touch</h2>
+      <h2 className={`text-center text-5xl ${ovo.className}`}>
+        Let's get in touch!
+      </h2>
       <p
         className={`text-center max-w-2xl mx-auto mt-5 mb-12 ${ovo.className}`}
       >
